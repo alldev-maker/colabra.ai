@@ -1,0 +1,17 @@
+{
+  "globalHeaders": {
+    "content-security-policy": "frame-ancestors 'self'; upgrade-insecure-requests",
+    "X-Frame-Options": "SAMEORIGIN",
+    "X-Permitted-Cross-Domain-Policies": "none",
+    "X-Content-Type-Options": "nosniff",
+  },
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  },
+  "responseOverrides": {
+    "404": {
+      "rewrite": "/error/",
+      "statusCode": 404
+    }
+  }
+}
