@@ -1,4 +1,5 @@
 export default defineNuxtPlugin(async function (nuxtApp) {
+  console.log(nuxtApp)
   // const sanity = useSanity()
 
   // console.log('here', nuxtApp)

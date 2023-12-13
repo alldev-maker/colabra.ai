@@ -1,6 +1,9 @@
 // import rteSchema from './rte_schema'
 // import axios from 'axios'
 import { getRoutes } from './dynamic_routes'
+import { defineNuxtConfig } from 'nuxt/config'
+
+// console.log(await getRoutes())
 
 export default defineNuxtConfig({
   // Target: https://go.nuxtjs.dev/config-target
@@ -8,7 +11,7 @@ export default defineNuxtConfig({
   generate: {
     // Error page for services (such as Netlify)
     // fallback: false,
-    routes: await getRoutes(),
+    // routes: null,
   },
   // Global page headers: https://go.nuxtjs.dev/config-head
   // head: {
@@ -65,12 +68,12 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  // plugins: [
-  //   '~/plugins/site-config.js',
-  //   '~/plugins/mdi-vue.js',
-  //   '~/plugins/rich-text-renderer.js',
-  //   '~/plugins/sanity-image-builder.js',
-  // ],
+  plugins: [
+    '~/plugins/site-config.js',
+    // '~/plugins/mdi-vue.js',
+    // '~/plugins/rich-text-renderer.js',
+    // '~/plugins/sanity-image-builder.js',
+  ],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -104,6 +107,7 @@ export default defineNuxtConfig({
     // ['nuxt-canonical', { baseUrl: process.env.BASE_URL }],
     // '@nuxtjs/markdownit',
     // '@nuxtjs/composition-api',
+    '@nuxtjs/tailwindcss',
     '@nuxt/image',
     '@nuxtjs/sanity',
   ],

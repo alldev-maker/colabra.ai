@@ -80,13 +80,13 @@
         :key="item._id"
         :data="item"
         :link="`/course/${item.slug.current}/`"
-        logo/>
+        logo
+      />
     </PageSection>
   </div>
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
 import useSanity from '~/hooks/useSanity'
 
 export default defineComponent({
@@ -100,16 +100,16 @@ export default defineComponent({
 
       // attach subtitle in items
       after: (items) => {
-        for (let i=0; i<items.length; i+=1){
-          items[i].subtitle = `Lesson ${i+1}`
+        for (let i = 0; i < items.length; i += 1) {
+          items[i].subtitle = `Lesson ${i + 1}`
         }
-      }
+      },
     })
 
     const page = useSanity({
       query: `*[_type=="page" && slug.current=="courses"]`,
       single: true,
-      useMeta: true
+      useMeta: true,
     })
 
     return {

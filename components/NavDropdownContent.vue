@@ -20,7 +20,12 @@
                 :href="item.path || '#'"
                 class="popup-item"
               >
-                <mdicon v-if="item.icon" class="text-ui-typo-lighter" :name="item.icon" width="18" />
+                <mdicon
+                  v-if="item.icon"
+                  class="text-ui-typo-lighter"
+                  :name="item.icon"
+                  width="18"
+                />
                 <div class="flex flex-grow flex-col gap-0">
                   <p class="_item-title">{{ item.title }}</p>
                   <p v-if="item.description" class="_item-description">
@@ -34,7 +39,12 @@
                 :to="item.path || '#'"
                 class="popup-item"
               >
-                <mdicon v-if="item.icon" class="text-ui-typo-lighter" :name="item.icon" width="18" />
+                <mdicon
+                  v-if="item.icon"
+                  class="text-ui-typo-lighter"
+                  :name="item.icon"
+                  width="18"
+                />
                 <div class="flex flex-grow flex-col">
                   <p class="_item-title">{{ item.title }}</p>
                   <p v-if="item.description" class="_item-description">
@@ -73,8 +83,6 @@
 </template>
 
 <script>
-import { defineComponent } from '@nuxtjs/composition-api'
-
 export default defineComponent({
   props: {
     data: { type: Array, required: true },

@@ -1,5 +1,3 @@
-import { useMeta, computed } from '@nuxtjs/composition-api'
-
 export default function (title, description, cover) {
   useMeta(
     computed(() => ({
@@ -23,7 +21,8 @@ export default function (title, description, cover) {
         {
           hid: 'og:image',
           property: 'og:image',
-          content: cover.value || cover || 'https://www.colabra.ai/share-general.png',
+          content:
+            cover.value || cover || 'https://www.colabra.ai/share-general.png',
         },
         {
           hid: 'twitter:card',
@@ -33,7 +32,8 @@ export default function (title, description, cover) {
         {
           hid: 'twitter:image',
           name: 'twitter:image',
-          content: cover.value || cover || 'https://www.colabra.ai/share-general.png',
+          content:
+            cover.value || cover || 'https://www.colabra.ai/share-general.png',
         },
         {
           hid: 'twitter:site',

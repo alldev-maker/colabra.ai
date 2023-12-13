@@ -1,6 +1,6 @@
 <template>
-  <div></div>
-  <!-- <div class="wrapper">
+  sdf
+  <div class="wrapper">
     <nuxt-link to="/course" role="alert">
       <span>
         Join Modern Lab, our lab management course featuring top industry
@@ -12,7 +12,7 @@
         />
       </svg>
     </nuxt-link>
-  </div> -->
+  </div>
 </template>
 
 <style lang="postcss" scoped>
