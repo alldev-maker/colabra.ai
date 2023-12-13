@@ -1,13 +1,13 @@
 <template>
   <div class="app">
     <Banner />
-    <TheHeader />
-    <main>
+    <!-- <TheHeader /> -->
+    <!-- <main>
       <section>
         <Nuxt />
       </section>
     </main>
-    <TheFooter />
+    <TheFooter /> -->
   </div>
 </template>
 
