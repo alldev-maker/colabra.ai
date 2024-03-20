@@ -130,9 +130,8 @@
           The single source of truth
         </h2>
         <p class="page-subhead">
-          Centralize all data and integrate your research workflows with<br
-            class="hidden lg:inline"
-          />
+          Centralize all data and integrate your research workflows with
+          <br class="hidden lg:inline" />
           support for
           <nuxt-link to="/integrations/" class="text-ui-primary hover:underline"
             >100+ integrations</nuxt-link
