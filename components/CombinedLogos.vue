@@ -10,9 +10,15 @@
     <div class="logo">
       <div v-if="data.featured_image || img" class="h-full">
         <img
-          v-if="((data.featured_image) ? getExt(data.featured_image.filename) : getSanityImageExtension(img)) !== 'svg'"
-          :src="(data.featured_image) ? data.featured_image.filename : $urlFor(img)"
-          :alt="(data.featured_image) ? data.featured_image.alt : data.title"
+          v-if="
+            (data.featured_image
+              ? getExt(data.featured_image.filename)
+              : getSanityImageExtension(img)) !== 'svg'
+          "
+          :src="
+            data.featured_image ? data.featured_image.filename : $urlFor(img)
+          "
+          :alt="data.featured_image ? data.featured_image.alt : data.title"
           width="96"
           height="96"
           quality="70"
@@ -20,8 +26,10 @@
         />
         <img
           v-else
-          :src="(data.featured_image) ? data.featured_image.filename : $urlFor(img)"
-          :alt="(data.featured_image) ? data.featured_image.alt : data.title"
+          :src="
+            data.featured_image ? data.featured_image.filename : $urlFor(img)
+          "
+          :alt="data.featured_image ? data.featured_image.alt : data.title"
           loading="lazy"
         />
       </div>
@@ -30,7 +38,6 @@
 </template>
 
 <script>
-import { defineComponent, computed } from '@nuxtjs/composition-api'
 import getExt, { getSanityImageExtension } from '~/helpers/get_extension'
 
 export default defineComponent({
@@ -66,14 +73,13 @@ export default defineComponent({
           classes += 'justify-center'
       }
 
-
       return classes
     })
 
     const img = computed(() => {
       return props.data.logo || props.data.logoImage
     })
-    
+
     return {
       img,
       alignment,

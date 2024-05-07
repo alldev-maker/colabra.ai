@@ -41,8 +41,6 @@
 </template>
 
 <script>
-import { defineComponent, ref } from '@nuxtjs/composition-api'
-
 export default defineComponent({
   props: {
     toggleMenu: {

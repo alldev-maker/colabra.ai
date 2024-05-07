@@ -58,7 +58,6 @@
 </template>
 
 <script>
-import { computed, defineComponent } from '@nuxtjs/composition-api'
 import { getSanityImageExtension } from '~/helpers/get_extension'
 
 export default defineComponent({

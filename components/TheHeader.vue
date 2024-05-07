@@ -3,7 +3,7 @@
     <div class="desktop">
       <div class="container md:py-3 py-4">
         <div class="wrapper px-2 md:px-4">
-          <div class="left">
+          <!-- <div class="left">
             <nuxt-link to="/" class="brand-link" :title="$site.name">
               <nuxt-img width="90" :alt="$site.name" src="/logo.svg" />
             </nuxt-link>
@@ -33,7 +33,7 @@
                 </template>
               </template>
             </div>
-          </div>
+          </div> -->
 
           <!-- <div class="px-2 md:px-4 max-w-screen-xs"> -->
           <!-- <ClientOnly> -->
